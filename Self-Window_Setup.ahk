@@ -1,7 +1,7 @@
 ; \file		Self-Window_Setup.AHK
 ; \brief	Place windows where they should be >:(
 ; \author   Saffi Cauthon
-; \date		12.05.2021 (dd/mm/yy)
+; \date     12.05.2021 (dd/mm/yy)
 ; \version	0.00.01
 ; \project	Self-Window_Setup
 ;-------------------------------------------------------------------------------
