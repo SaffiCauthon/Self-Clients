@@ -1,12 +1,12 @@
-; \file		Self-Window_Setup.AHK
-; \brief	Place windows where they should be >:(
+; \file     Self-Window_Setup.AHK
+; \brief    Place windows where they should be >:(
 ; \author   Saffi Cauthon
 ; \date     12.05.2021 (dd/mm/yy)
-; \version	0.00.01
-; \project	Self-Window_Setup
+; \version  0.00.01
+; \project  Self-Window_Setup
 ;-------------------------------------------------------------------------------
 
-#SingleInstance, Force	;Make sure that only one AHK app is running at a time
+#SingleInstance, Force  ;Make sure that only one AHK app is running at a time
 
 osrs_start_pos_x    :=  1111
 osrs_start_pos_y    :=  0
