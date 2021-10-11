@@ -1,12 +1,19 @@
 ; \file     Self-Window_Setup.AHK
 ; \brief    Place windows where they should be >:(
 ; \author   Saffi Cauthon
-; \date     12.05.2021 (dd/mm/yy)
-; \version  0.00.01
+; \date     11.10.2021 (dd/mm/yy)
+; \version  0.00.02
 ; \project  Self-Window_Setup
 ;-------------------------------------------------------------------------------
 
 #SingleInstance, Force  ;Make sure that only one AHK app is running at a time
+
+steam_start_pos_x    :=  1146
+steam_start_pos_y    :=  0
+steam_size_x         :=  765
+steam_size_y         :=  548
+steam_transpose_x    :=  -100
+steam_transpose_y    :=  0
 
 osrs_start_pos_x    :=  1111
 osrs_start_pos_y    :=  0
@@ -21,6 +28,29 @@ rs3_size_x          :=  823
 rs3_size_y          :=  579
 rs3_transpose_x     :=  -100
 rs3_transpose_y     :=  0
+
+F10::
+{
+    WinGet, steam_id, List, Old School RuneScape
+    Loop, %steam_id%
+    {
+        this_id := steam_id%A_Index%
+
+        WinMove
+            ,ahk_id %this_id%
+            ,
+            ,steam_start_pos_x + (A_Index-1)*steam_transpose_x
+            ,steam_start_pos_y + (A_Index-1)*steam_transpose_y
+            ,steam_size_x
+            ,steam_size_y
+            ,
+            ,
+
+        if A_Index = steam_id
+            Break
+    }
+}
+Return
 
 F11::
 {
