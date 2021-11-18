@@ -3,7 +3,7 @@
 - The script will then find each client and set the correct size and offset the clients
 
 # Hotkeys:
-- F10 will organize OSRS Steam client windows.
+- F10 will organize OSRS Steam client windows
 - F11 will organize RuneLite clients windows
 - F12 will organize RuneScape client windows
 
