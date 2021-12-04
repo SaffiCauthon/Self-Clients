@@ -7,5 +7,8 @@
 - F11 will organize RuneLite clients windows
 - F12 will organize RuneScape client windows
 
-# Demo:
-![2021-05-12_11-17-58](https://user-images.githubusercontent.com/81042687/118000397-c5d8c380-b313-11eb-93f0-a9053d1e1aac.gif)
+# Normal Use Demo:
+![Normal Demo](https://user-images.githubusercontent.com/81042687/118000397-c5d8c380-b313-11eb-93f0-a9053d1e1aac.gif)
+
+# Spirit Warrior Banking/Invention Days Demo
+![Banking Demo](https://i.imgur.com/5FbEEIR.gif)
