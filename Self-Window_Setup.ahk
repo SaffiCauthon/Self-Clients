@@ -1,11 +1,10 @@
 ; \file     Self-Window_Setup.AHK
-; \brief    Place windows where they should be >:(
+; \brief    You'll want this if you do SWs, lol
 ; \author   Saffi Cauthon
-; \date     04.12.2021 (dd/mm/yy)
-; \version  0.00.03
+; \date     27.12.2021 (dd/mm/yy)
+; \version  0.00.04
 ; \project  Self-Window_Setup
 ;-------------------------------------------------------------------------------
-
 #SingleInstance, Force  ;Make sure that only one AHK app is running at a time
 
 steam_size_x         :=  765
@@ -39,6 +38,17 @@ rs3b_start_pos2_y   :=  508
 rs3b_transpose_x    :=  -520
 rs3b_transpose_y    :=  0
 
+RSUnderMouse()
+{
+    MouseGetPos, , , cur_window_id
+    WinGet, cur_window_name, ProcessName, % "ahk_id" cur_window_id
+    return cur_window_name ~= "RuneLite\.exe|rs2client\.exe|java\.exe"
+}
+
+#If, RSUnderMouse()
+`::WinActivateBottom, ahk_exe rs2client.exe
+Return
+#If
 
 F10::
 {
