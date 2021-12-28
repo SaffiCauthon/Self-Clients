@@ -1,8 +1,8 @@
 ; \file     Self-Window_Setup.AHK
 ; \brief    You'll want this if you do SWs, lol
 ; \author   Saffi Cauthon
-; \date     27.12.2021 (dd/mm/yy)
-; \version  0.00.04
+; \date     28.12.2021 (dd/mm/yy)
+; \version  0.00.05
 ; \project  Self-Window_Setup
 ;-------------------------------------------------------------------------------
 #SingleInstance, Force  ;Make sure that only one AHK app is running at a time
@@ -46,7 +46,14 @@ RSUnderMouse()
 }
 
 #If, RSUnderMouse()
-`::WinActivateBottom, ahk_exe rs2client.exe
+Z::WinActivateBottom, ahk_exe rs2client.exe
+Return
+#If
+
+#IfWinActive RuneScape
+X::
+MouseClick, Right
+Keywait, Z
 Return
 #If
 
