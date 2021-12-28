@@ -42,7 +42,7 @@ RSUnderMouse()
 {
     MouseGetPos, , , cur_window_id
     WinGet, cur_window_name, ProcessName, % "ahk_id" cur_window_id
-    return cur_window_name ~= "RuneLite\.exe|rs2client\.exe|java\.exe"
+    Return cur_window_name ~= "RuneLite\.exe|rs2client\.exe|java\.exe"
 }
 
 #If, RSUnderMouse()
