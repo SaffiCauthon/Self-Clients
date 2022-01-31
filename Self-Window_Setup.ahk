@@ -30,12 +30,12 @@ rs3_transpose_y     :=  0
 
 rs3b_size_x         :=  823
 rs3b_size_y         :=  579
-rs3b_num_row        :=  2
+rs3b_num_row        :=  1
 rs3b_start_pos1_x   :=  1104
-rs3b_start_pos1_y   :=  0
+rs3b_start_pos1_y   :=  508
 rs3b_start_pos2_x   :=  1104
 rs3b_start_pos2_y   :=  508
-rs3b_transpose_x    :=  -520
+rs3b_transpose_x    :=  -809
 rs3b_transpose_y    :=  0
 
 RSUnderMouse()
