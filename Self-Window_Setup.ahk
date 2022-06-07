@@ -46,14 +46,14 @@ RSUnderMouse()
 }
 
 #If, RSUnderMouse()
-Z::WinActivateBottom, ahk_exe rs2client.exe
+z::WinActivateBottom, ahk_exe rs2client.exe
 Return
 #If
 
 #IfWinActive RuneScape
-X::
+x::
 MouseClick, Right
-Keywait, Z
+Keywait, z
 Return
 #If
 
